@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选手介绍页面</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            /* 固定 */
+        }
+
+        .background {
+            background-image: url('img//BK.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+        }
+
+        .candidate {
+            width: 300px;
+            height: 400px;
+            overflow: hidden;
+            margin-top: 200px;
+        }
+
+        .candidate img {
+            width: 100%;
+            height: auto;
+        }
+
+        .introduction {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            width: 300px;
+            max-width: 400px;
+            box-sizing: border-box;
+            border: none;
+        }
+
+        .vote-button {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background">
+        <div class="container">
+            <div class="candidate">
+                <img src="img\e.jpg" alt="选手图片">
+            </div>
+            <div class="introduction">
+                <h2>大象</h2>
+                <p>大象是陆地上最大的哺乳动物，它们以其庞大的体型、长鼻子和长长的象牙而闻名，它们非常智慧，并且具有较高社会性，请为大象投票！！</p>
+            </div>
+        </div>
+        <button class="vote-button" onclick="vote()">投票</button>
+    </div>
+
+    <script>
+        function vote() {
+            alert('投票成功！');
+        }
+    </script>
+</body>
+
+</html>
